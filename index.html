@@ -26,6 +26,54 @@
 
     <div class="row" id="content">
       <div class="medium-8 columns">
+        
+        <div class="blog-post">
+          <h3>Feature Blog Post: Phil the Workflow Management Guy<small>1/13/2026</small></h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+     
+
+ <p> Hi! It’s Phil the IT Guy, the navigator of my corner of the ITverse. Welcome back to my blog. Today’s blog features workflow management and solution delivery and design within Microsoft’s Power Automate. This solution requires multiple steps but today’s focus will be designing the workflow based on the prompt and delivering the solution. </p>
+
+ <p> During my tenure, I worked under an IT division for a client. One of their stakeholders previously had a workflow that integrated SharePoint, Outlook, and Power Automate to communicate updates about important deliverables. Due to a lack of expertise, there were no controls set for when the SME over this process took leave. This resulted in a control gap within their IT process. The prompt was to integrate the systems as before with a list of key components, test the integration, and deliver the solution with a solid implementation addressing the control gaps. </p>
+
+ <p> For the sake of transparency, here are the list of key components, an integration testing matrix, and the control gaps. </p>
+
+ <p> Key Components: </p>
+ <p> - Variables: Status, Due Date </p>
+ <p> - Conditions: Submission Status = Submitted, Status = Active, Due  <p> Dates = Outputs </p>
+  <p> - Data Ops: Ticks, Due Date in Ticks, Difference in Days in Ticks </p>
+  <p> - Stakeholders: Preparer, Manager, Controller </p>
+
+ <p> Integration Testing Matrix </p>
+  <p> - Test for Confirming Variables: confirm they work </p>
+  <p> - Test Messaging for Due Date Variation: receive message for all messaging </p>
+  <p> - Test Conditions (according to SharePoint) </p>
+  <p> - Test Stakeholders Reminder Workflow </p>
+  <p> - Unit testing: top count check and check for looping </p>
+
+ <p> Control Gaps </p>
+ <p> - Resulted in deficiency as workflow stopped </p>
+ <p> - No reminders sent out </p>
+ <p> - Lack of continuity </p>
+ <p> - Management lacked documentation/access to workflows </p>
+
+ <p> For context, let’s walkthrough the importance of these items. The key components served as scope, scale, and quantitative/qualitative structure over this project. The variables anchor the communications by specifying a centralized due date and a status to manage the workflow around. Within the conditions, the statuses narrow the scope of each unit so only the important units are being measured and communicated. The other portion of the condition, the outputs, are quantifiable thresholds that determine when each stakeholder receives their update. The Data Ops portion which includes the compose functions are doing the computations in the form of ticks. Ticks are a form of measurement that counts date and timestamps using digits as the value. The stakeholders are a tiered list of user profiles who will receive communications about deliverables depending on their set threshold. </p>
+
+ <p> These items were arranged into a workflow where the variables are initialized, data is ingested from the SharePoint site, and the computations take place. That sets the stage for the data to flow and be used downstream by the conditional statements narrowing the scope and then the action of sending communications about each deliverable based on the stakeholders set within the SharePoint site. Through the integration testing matrix, lots of information was learned about the limitations of the systems in use as well as some of the methods that were originally used, but more on that later. The most important outcome is that using this matrix the solution was stress tested and delivered on the needs of management. While that did the heavy lifting on management’s side, there were some other factors that needed handling that I addressed. </p>
+
+ <p> Since management had no idea where the documentation was, I created two pieces of documentation - one to document the process from design through cutover and another document to teach management to build this workflow from scratch. In addition to that, I shared the planning workflow with both management and the SME once they returned, further resolving their continuity issue. To add the cherry on top, I initiated the creation, documentation, and implementation of a service account to house the final version of the project. All of these steps were taken on management’s behalf to address all control gaps presented when the SME went on leave. </p>
+
+<p> The final solution restored continuity to the formerly deficient control bringing it to remediation. It resulted in automated reminders to stakeholders as well as removal of single-SME dependency. </p>
+ 
+
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Phil the IT Guy</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        
         <div class="blog-post">
           <h3>Blog Post #0 <small>12/16/2025</small></h3>
           
